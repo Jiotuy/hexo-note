@@ -9,7 +9,7 @@ menu:
   Categories: /categories/ || fas fa-folder-open
   List||fas fa-list:
     Tool: /tool/ || fas fa-music
-    actualCombat: /actualCombat/ || fas fa-video
+    as: /as/ || fas fa-video
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 

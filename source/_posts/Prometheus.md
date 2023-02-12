@@ -1,18 +1,20 @@
 ---
-link: 
-title: docker容器部署Prometheus服务——云平台监控利器
-description: Prometheus是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
-keywords: 容器,Docker,Node.js,网站,TCP/IP
-author: 
+abbrlink: ''
+author: null
+categories:
+- tasks
 cover: https://s3.uuu.ovh/imgs/2022/11/21/b72438f70f97b881.png
 date: 2022.11.16
+description: Prometheus是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
+keywords: 容器,Docker,Node.js,网站,TCP/IP
+link: null
 publisher: null
-top_img: https://picture.noel.ga/202211210024388.jpg
-stats: paragraph=38 sentences=3, words=46
-categories: 
-  - tasks
+stats: paragraph=38 sentences=3, words=46
 tags:
-  - prometheus
+- prometheus
+title: docker容器部署Prometheus服务——云平台监控利器
+top_img: https://picture.noel.ga/202211210024388.jpg
+updated: Sun, 12 Feb 2023 13:52:27 GMT
 ---
 **Prometheus**是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
 
@@ -40,9 +42,9 @@ tags:
 
 以上四个组件的所有介绍，可到[Github官网](https://github.com/)，直接搜索相应的docker镜像名称（在下面的部署过程中，每运行一个服务的容器，都会指定其镜像名称，可以参考命令中的镜像名称进行搜索），即可找到到关于组件的详细介绍。 **一、环境准备**
 
-## **开始配置** 
+## **开始配置**
 
-### **1、运行Node Server容器** 
+### **1、运行Node Server容器**
 
 该组件需要运行在所有需要监控的主机上，也就是，我这里三台服务器都需要执行下面的命令，运行此容器组件
 
@@ -54,9 +56,9 @@ tags:
 
 每台服务器运行上述命令后，浏览器访问docker服务器的IP地址+9100端口，能够看到以下界面，即说明容器运行没有问题。这些内容看不懂没关系，这些信息本来就不是给我们看的，我们看的是最后给我们提供的web界面。看到的网页如下：
 
-**最好访问一下所有运行上述容器的服务器的9100端口，确保可以看到上面的页面** 
+**最好访问一下所有运行上述容器的服务器的9100端口，确保可以看到上面的页面**
 
-### **2、运行cAdvisor容器** 
+### **2、运行cAdvisor容器**
 
 ```bash
 [root@docker01 ~]# docker run -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker:/var/lib/docker:ro -p 8080:8080 --detach=true --name=cadvisor --net=host google/cadvisor
@@ -68,7 +70,7 @@ cAdvrisor是负责收集Host上运行的容器信息的，同样，在所有需�
 
 ### **3、docker01上运行Prometheus server容器**
 
- **Prometheus Server是主服务器，所以只需要在其中一台运行此容器即可。这里我在docker01服务器上运行**
+**Prometheus Server是主服务器，所以只需要在其中一台运行此容器即可。这里我在docker01服务器上运行**
 
 ```bash
 [root@docker01 ~]# docker run -d -p 9090:9090 --name prometheus --net=host prom/prometheus
@@ -120,7 +122,7 @@ cAdvrisor是负责收集Host上运行的容器信息的，同样，在所有需�
 
 **方式1：**
 
- **1）进入模板后，点击"Download JSON"，以便下载**
+**1）进入模板后，点击"Download JSON"，以便下载**
 
 **2）下载后，回到grafana界面，点击如下**
 
@@ -142,11 +144,11 @@ cAdvrisor是负责收集Host上运行的容器信息的，同样，在所有需�
 
 **至此，web界面的监控就部署完成了**
 
-###  **5、设置Prometheus告警** 
+### **5、设置Prometheus告警**
 
 Prometheus的告警方式有好几种方式，邮箱、钉钉、微信等，我这里选择邮箱的告警方式
 
-####  **1）docker01服务器上运行alertmanager容器**
+#### **1）docker01服务器上运行alertmanager容器**
 
 ```bash
 [root@docker01 ~]# docker run --name alertmanager -d -p 9093:9093 prom/alertmanager            # 先简单运行一个容器
@@ -190,7 +192,6 @@ inhibit_rules:
 #如果配置文件有错误，那么这个容器是运行不了的。
 ```
 
-
 #### **2）设置alertmanager报警规则**
 
 ```bash
@@ -211,8 +212,7 @@ groups:
 "
 ```
 
-
-**若想自己编写报警规则，可以参考它的**[**官方文档**](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)**,我这里的报警规则是不太准确有些问题的，但是可以凑活收到它的报警信息** 
+**若想自己编写报警规则，可以参考它的**[**官方文档**](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)**,我这里的报警规则是不太准确有些问题的，但是可以凑活收到它的报警信息**
 
 #### **3）关联到Prometheus**
 
@@ -228,7 +228,6 @@ rule_files:
 #必须格外注意配置文件的格式，注意缩进
 ```
 
-
 ```bash
 [root@docker01 ~]# docker rm -f prometheus 
 prometheus
@@ -236,7 +235,6 @@ prometheus
 #重新运行此容器，挂载新的文件
 [root@docker01 ~]# docker logs prometheus             # 若启动遇到错误，可以查看容器的日志拍错
 ```
-
 
 **至此，如果Prometheus页面中的target有down掉的容器，那么就会给你的邮箱发送报警信息。当容器正常后，它还会给你反馈**
 
@@ -305,10 +303,19 @@ d0bdab7731c8        grafana/grafana      "/run.sh"                About an hour 
 5e275c848b03        prom/node-exporter   "/bin/node_exporter …"   4 hours ago         Up About an hour                             focused_mayer
 ```
 
-
 至此，新的报警模板也生成了，如果以下容器有Down的，就会给你发送新的邮件，恢复正常后，也会发送邮件，同样，邮件中的内容格式是有误的，但是你可以正常接收到报警信息，若想要更改其报警模板，可以参考[github官方文档](https://github.com/prometheus/alertmanager/blob/master/template/email.html) **我收到的报警信息如下**
 
-
-
 转自 [docker容器部署Prometheus服务——云平台监控利器 - 腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1678621)
+# 自己部署
+
+1.grafana通过nginx进行转发
+
+​	**todo**
+
+2.grafana获取不到loki的数据
+
+- 确定端口已开放
+- 防火墙问题(遇到过，应该可以通过某些设置放开，但是我当时直接关了)
+
+3.promtail使用文件夹挂载，因为log文件会变化
 

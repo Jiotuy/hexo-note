@@ -14,7 +14,7 @@ tags:
 - prometheus
 title: docker容器部署Prometheus服务——云平台监控利器
 top_img: https://picture.noel.ga/202211210024388.jpg
-updated: Sun, 12 Feb 2023 13:52:27 GMT
+updated: Wed, 15 Feb 2023 14:21:17 GMT
 ---
 **Prometheus**是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
 
@@ -306,11 +306,61 @@ d0bdab7731c8        grafana/grafana      "/run.sh"                About an hour 
 至此，新的报警模板也生成了，如果以下容器有Down的，就会给你发送新的邮件，恢复正常后，也会发送邮件，同样，邮件中的内容格式是有误的，但是你可以正常接收到报警信息，若想要更改其报警模板，可以参考[github官方文档](https://github.com/prometheus/alertmanager/blob/master/template/email.html) **我收到的报警信息如下**
 
 转自 [docker容器部署Prometheus服务——云平台监控利器 - 腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1678621)
+
 # 自己部署
 
 1.grafana通过nginx进行转发
 
-​	**todo**
+nginx和grafana均使用docker部署
+
+grafana官方文档：[在反向代理|后面运行 Grafana格拉法纳实验室](https://grafana.com/tutorials/run-grafana-behind-a-proxy/)
+
+**nginx配置**
+
+```nginx
+# this is required to proxy Grafana Live WebSocket connections.
+map $http_upgrade $connection_upgrade {
+  default upgrade;
+  '' close;
+}
+
+upstream grafana {
+  server domain.com:3000; #域名:端口 由于使用docker，所以不能像官方文档一样使用localhost
+}
+
+server {
+  listen 80;
+  root /usr/share/nginx/html;
+  index index.html index.htm;
+
+  location /grafana/ {
+    rewrite  ^/grafana/(.*)  /$1 break;
+    proxy_set_header Host $http_host;
+    proxy_pass http://grafana;
+  }
+
+  # Proxy Grafana Live WebSocket connections.
+  location /grafana/api/live/ {
+    rewrite  ^/grafana/(.*)  /$1 break;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $connection_upgrade;
+    proxy_set_header Host $http_host;
+    proxy_pass http://grafana;
+  }
+}
+```
+
+**grafana配置**
+
+```conf
+[server]
+domain = domain.com
+root_url = %(protocol)s://%(domain)s/grafana/
+serve_from_sub_path = true
+```
+
+之后重启容器访问 http://domain.com/grafana 即可
 
 2.grafana获取不到loki的数据
 
@@ -318,4 +368,3 @@ d0bdab7731c8        grafana/grafana      "/run.sh"                About an hour 
 - 防火墙问题(遇到过，应该可以通过某些设置放开，但是我当时直接关了)
 
 3.promtail使用文件夹挂载，因为log文件会变化
-

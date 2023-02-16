@@ -5,7 +5,7 @@ aside: null
 categories:
 - interesting
 comments: null
-cover: https://s3.uuu.ovh/imgs/2022/11/21/88fce38f14d053c7.jpg
+cover: https://picture.noel.ga/202302161505324.webp
 date: 2022.11.16
 description: QEMU能启动那些为不同中央处理器编译的Linux程序，虚拟化模拟器，几乎可以模拟任何硬件设备
 highlight_shrink: null
@@ -17,7 +17,7 @@ tags:
 title: qemu半虚拟化技术
 top_img: https://picture.noel.ga/202211210024387.jpg
 type: null
-updated: Thu, 16 Feb 2023 03:35:59 GMT
+updated: Thu, 16 Feb 2023 06:52:08 GMT
 ---
 基本原理：用qemu-user半虚拟化技术与Docker技术融合。
 实验环境：Ubuntu16.04 (Ubuntu14.04亲测可用) docker version 1.13.0

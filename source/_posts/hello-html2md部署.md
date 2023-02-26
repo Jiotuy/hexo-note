@@ -18,7 +18,7 @@ tags:
 title: hello-html2md部署
 top_img: https://picture.noel.ga/202302142137098.jpeg
 type: null
-updated: Tue, 14 Feb 2023 13:11:17 GMT
+updated: Sun, 26 Feb 2023 07:11:58 GMT
 ---
 # hello-html2md部署
 
@@ -46,12 +46,6 @@ npm config set registry https://registry.npm.taobao.org
 npm config get registry //查看是否设置成功
 ```
 
-**npm权限错误：**
-
-```bash
-npm install --unsafe-perm=true --allow-root
-```
-
 ### 2. git克隆
 
 ```bash
@@ -59,6 +53,12 @@ git clone https://github.com/helloworld-Co/html2md.git
 ```
 
 ### 3. 安装运行
+
+**npm权限错误：**
+
+```bash
+npm install --unsafe-perm=true --allow-root
+```
 
 ```bash
 npm install

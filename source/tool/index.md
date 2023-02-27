@@ -1,7 +1,7 @@
 ---
 date: 2022-11-20 13:26:55
 title: tool
-updated: Mon, 27 Feb 2023 13:39:52 GMT
+updated: Mon, 27 Feb 2023 16:07:53 GMT
 ---
 ## xml
 
@@ -24,3 +24,11 @@ updated: Mon, 27 Feb 2023 13:39:52 GMT
 ## 正则表达式在线测试
 
 [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+
+## 随机图片api
+
+[樱花随机二次元图片API-樱花 (dmoe.cc)](https://www.dmoe.cc/)
+
+[https://api.ixiaowai.cn/gqapi/gqapi.php](https://api.ixiaowai.cn/gqapi/gqapi.php)（高清壁纸）
+
+每日bing：[https://api.isoyu.com/bing\_images.php](https://api.isoyu.com/bing_images.php)

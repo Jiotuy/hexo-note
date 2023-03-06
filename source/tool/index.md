@@ -3,7 +3,7 @@ date: 2022-11-20 13:26:55
 title: tool
 updated: Mon, 06 Mar 2023 05:23:05 GMT
 ---
-[TOC]
+<!-- toc -->
 
 
 # 学习笔记

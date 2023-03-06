@@ -112,3 +112,5 @@ search:
   field: post
   content: true
  
+toc:
+  maxdepth: 3

@@ -1,8 +1,22 @@
 ---
 date: 2022-11-20 13:26:55
 title: tool
-updated: Sun, 05 Mar 2023 14:09:23 GMT
+updated: Mon, 06 Mar 2023 04:27:37 GMT
 ---
+# 学习笔记
+
+## 代码随想录
+
+[代码随想录 (programmercarl.com)](https://www.programmercarl.com/)
+
+## java
+
+[| Java 全栈知识体系 (pdai.tech)](https://pdai.tech/)
+
+[小林coding (xiaolincoding.com)](https://xiaolincoding.com/)
+
+# 工具
+
 ## xml
 
 [xml树](https://bfotool.com/zh/xml-viewer)

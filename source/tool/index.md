@@ -10,13 +10,15 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 
 ## 代码随想录
 
-[代码随想录 (programmercarl.com)](https://www.programmercarl.com/)
+[代码随想录](https://www.programmercarl.com/)
 
 ## java
 
-[| Java 全栈知识体系 (pdai.tech)](https://pdai.tech/)
+[Java 全栈知识体系](https://pdai.tech/)
 
-[小林coding (xiaolincoding.com)](https://xiaolincoding.com/)
+[小林coding](https://xiaolincoding.com/)
+
+[Linux命令搜索引擎](https://jaywcjlove.gitee.io/linux-command/)
 
 # 工具
 
@@ -32,11 +34,11 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 
 ## html2md
 
-[HTML To Markdown 转换工具 · URL To Markdown 转换工具 · 开发者工具箱 (devtool.tech)](https://devtool.tech/html-md)
+[HTML To Markdown 转换工具 · URL To Markdown 转换工具 · 开发者工具箱](https://devtool.tech/html-md)
 
 ## url编码解码
 
-[URL Encoding · 开发者工具箱 (devtool.tech)](https://devtool.tech/url-encode)
+[URL Encoding · 开发者工具箱](https://devtool.tech/url-encode)
 
 ## 正则表达式在线测试
 
@@ -44,7 +46,7 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 
 ## 随机图片api
 
-[樱花随机二次元图片API-樱花 (dmoe.cc)](https://www.dmoe.cc/)
+[樱花随机二次元图片API-樱花](https://www.dmoe.cc/)
 
 [https://api.ixiaowai.cn/gqapi/gqapi.php](https://api.ixiaowai.cn/gqapi/gqapi.php)（高清壁纸）
 
@@ -52,4 +54,4 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 
 ## 以图搜图
 
-[Sauce Found? (saucenao.com)](https://saucenao.com/search.php)  需要魔法,pixiv等图源
+[Sauce Found? ](https://saucenao.com/search.php)  需要魔法,pixiv等图源

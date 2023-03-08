@@ -5,7 +5,7 @@ aside: null
 categories:
 - - 笔记
 comments: null
-cover: null
+cover: https://picture.noel.ga/202303071822534.png
 date: '2023-03-03 23:14:57'
 description: null
 highlight_shrink: null
@@ -15,7 +15,7 @@ mathjax: null
 tags:
 - 运维
 title: docker相关知识
-top_img: null
+top_img: https://picture.noel.ga/202303071821235.png
 type: null
 updated: Fri, 03 Mar 2023 15:14:57 GMT
 ---

@@ -112,9 +112,6 @@ search:
   field: post
   content: true
  
-toc:
-  maxdepth: 3
-
 # 短地址
 abbrlink:
   alg: crc16 #support crc16(default) and crc32

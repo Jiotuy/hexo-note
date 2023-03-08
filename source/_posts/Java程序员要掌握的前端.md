@@ -1,26 +1,25 @@
 ---
-abbrlink: ''
-aplayer: null
-aside: null
+abbrlink: '3361'
 categories:
-- - 笔记
-comments: null
-cover: https://picture.noel.ga/20230223135930.png
+  - - 笔记
+cover: 'https://picture.noel.ga/20230223135930.png'
 date: '2023-02-23 13:46:00'
-description: null
-highlight_shrink: null
-katex: null
-keywords: null
-mathjax: null
 tags:
-- 前端
+  - 前端
 title: Java程序员要掌握的前端
-top_img: https://picture.noel.ga/20230223135827.png
-type: null
-updated: Thu, 23 Feb 2023 05:46:01 GMT
+top_img: 'https://picture.noel.ga/20230223135827.png'
+updated: 'Thu, 23 Feb 2023 05:46:01 GMT'
+aplayer:
+aside:
+comments:
+description:
+highlight_shrink:
+katex:
+keywords:
+mathjax:
+type:
 ---
 
-<!-- toc -->
 
 
 前言

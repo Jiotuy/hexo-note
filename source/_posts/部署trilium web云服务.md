@@ -1,23 +1,23 @@
 ---
-abbrlink: ''
-aplayer: null
-aside: null
+abbrlink: '8183'
 categories:
-- - interesting
-comments: null
-cover: https://picture.noel.ga/202303071816814.jpeg
+  - - interesting
+cover: 'https://picture.noel.ga/202303071816814.jpeg'
 date: '2023-03-7 13:46:00'
-description: null
-highlight_shrink: null
-katex: null
-keywords: null
-mathjax: null
 tags:
-- deploy
+  - deploy
 title: 部署trilium web云服务
-top_img: https://picture.noel.ga/202303071818285.jpeg
-type: null
-updated: 
+top_img: 'https://picture.noel.ga/202303071818285.jpeg'
+aplayer:
+aside:
+comments:
+description:
+highlight_shrink:
+katex:
+keywords:
+mathjax:
+type:
+updated:
 ---
 
 <!-- toc -->

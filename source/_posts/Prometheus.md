@@ -1,20 +1,20 @@
 ---
-abbrlink: ''
-author: null
+abbrlink: b4b0
 categories:
-- - 转载
-cover: https://picture.noel.ga/202302161451459.png
+  - - 转载
+cover: 'https://picture.noel.ga/202302161451459.png'
 date: 2022.11.16
 description: Prometheus是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
-keywords: 容器,Docker,Node.js,网站,TCP/IP
-link: null
-publisher: null
-stats: paragraph=38 sentences=3, words=46
+keywords: '容器,Docker,Node.js,网站,TCP/IP'
+stats: "paragraph=38\_sentences=3,\_words=46"
 tags:
-- prometheus
+  - prometheus
 title: docker容器部署Prometheus服务——云平台监控利器
-top_img: https://picture.noel.ga/202211210024388.jpg
-updated: Thu, 16 Feb 2023 06:48:53 GMT
+top_img: 'https://picture.noel.ga/202211210024388.jpg'
+updated: 'Thu, 16 Feb 2023 06:48:53 GMT'
+author:
+link:
+publisher:
 ---
 **Prometheus**是一个系统和服务监视系统。它以给定的时间间隔从已配置的目标收集指标，评估规则表达式，显示结果，并在发现某些情况为真时触发警报。
 

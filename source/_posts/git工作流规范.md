@@ -1,24 +1,24 @@
 ---
-abbrlink: ''
-aplayer: null
-aside: null
+abbrlink: 36a7
 categories:
-- - 转载
-comments: null
-cover: https://picture.noel.ga/202302161432344.jpeg
+  - - 转载
+cover: 'https://picture.noel.ga/202302161432344.jpeg'
 date: '2023-02-16 14:16:23'
 description: git工作流规范，让工作条理更加清晰
-highlight_shrink: null
-katex: null
-keywords: null
-mathjax: null
 tags:
-- git
-- 规范
+  - git
+  - 规范
 title: git工作流规范
-top_img: https://picture.noel.ga/202302161433065.jpeg
-type: null
-updated: Thu, 16 Feb 2023 06:16:25 GMT
+top_img: 'https://picture.noel.ga/202302161433065.jpeg'
+updated: 'Thu, 16 Feb 2023 06:16:25 GMT'
+aplayer:
+aside:
+comments:
+highlight_shrink:
+katex:
+keywords:
+mathjax:
+type:
 ---
 # 前言
 

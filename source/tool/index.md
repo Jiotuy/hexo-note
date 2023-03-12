@@ -1,10 +1,9 @@
 ---
 date: 2022-11-20 13:26:55
 title: tool
-updated: Mon, 06 Mar 2023 05:23:05 GMT
+updated: Sun, 12 Mar 2023 13:51:16 GMT
 ---
 <!-- toc -->
-
 
 # 学习笔记
 
@@ -17,6 +16,8 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 [Java 全栈知识体系](https://pdai.tech/)
 
 [小林coding](https://xiaolincoding.com/)
+
+## linux
 
 [Linux命令搜索引擎](https://jaywcjlove.gitee.io/linux-command/)
 
@@ -55,3 +56,7 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 ## 以图搜图
 
 [Sauce Found? ](https://saucenao.com/search.php)  需要魔法,pixiv等图源
+
+## 在线工具
+
+[菜鸟工具 - 不止于工具 ](https://c.runoob.com/)

@@ -1,10 +1,8 @@
 ---
 date: 2022-11-20 13:26:55
 title: tool
-updated: Sun, 12 Mar 2023 13:51:16 GMT
+updated: Mon, 13 Mar 2023 15:30:43 GMT
 ---
-<!-- toc -->
-
 # 学习笔记
 
 ## 代码随想录
@@ -22,6 +20,16 @@ updated: Sun, 12 Mar 2023 13:51:16 GMT
 [Linux命令搜索引擎](https://jaywcjlove.gitee.io/linux-command/)
 
 # 工具
+
+## 正则表达式在线测试
+
+[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+
+[regex101: build, test, and debug regex](https://regex101.com/) （这个感觉比较好用）
+
+## 在线工具
+
+[菜鸟工具 - 不止于工具](https://c.runoob.com/)
 
 ## xml
 
@@ -41,10 +49,6 @@ updated: Sun, 12 Mar 2023 13:51:16 GMT
 
 [URL Encoding · 开发者工具箱](https://devtool.tech/url-encode)
 
-## 正则表达式在线测试
-
-[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
-
 ## 随机图片api
 
 [樱花随机二次元图片API-樱花](https://www.dmoe.cc/)
@@ -56,7 +60,3 @@ updated: Sun, 12 Mar 2023 13:51:16 GMT
 ## 以图搜图
 
 [Sauce Found? ](https://saucenao.com/search.php)  需要魔法,pixiv等图源
-
-## 在线工具
-
-[菜鸟工具 - 不止于工具 ](https://c.runoob.com/)

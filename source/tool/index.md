@@ -1,7 +1,7 @@
 ---
 date: 2022-11-20 13:26:55
 title: tool
-updated: Mon, 06 Mar 2023 05:23:05 GMT
+updated: Mon, 13 Mar 2023 15:30:43 GMT
 ---
 
 **目录**
@@ -34,9 +34,21 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 
 [小林coding](https://xiaolincoding.com/)
 
+## linux
+
 [Linux命令搜索引擎](https://jaywcjlove.gitee.io/linux-command/)
 
 # 工具
+
+## 正则表达式在线测试
+
+[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+
+[regex101: build, test, and debug regex](https://regex101.com/) （这个感觉比较好用）
+
+## 在线工具
+
+[菜鸟工具 - 不止于工具](https://c.runoob.com/)
 
 ## xml
 
@@ -55,10 +67,6 @@ updated: Mon, 06 Mar 2023 05:23:05 GMT
 ## url编码解码
 
 [URL Encoding · 开发者工具箱](https://devtool.tech/url-encode)
-
-## 正则表达式在线测试
-
-[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
 
 ## 随机图片api
 

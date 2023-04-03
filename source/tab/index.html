@@ -21,8 +21,23 @@
 </head>
 
 <body>
-    <!-- <nav id="menu" class="menu">
-        <blockquote class="blockquote">▎ 工具</blockquote>
+    <nav id="menu" class="menu">
+
+        <blockquote class="blockquote">▎ guli-mall</blockquote>
+        <ul>
+            <a target="_blank" href="http://10.200.162.14:9108/nacos/">
+                <li class="sidenav-btn">nacos
+                    <p>nacos</p>
+                </li>
+            </a>
+            <a target="_blank" href="https://gitea.noel.ga/">
+                <li class="sidenav-btn">gitea
+                    <p>gitea</p>
+                </li>
+            </a>
+        </ul>
+
+        <!-- <blockquote class="blockquote">▎ 工具</blockquote>
         <ul>
             <a target="_blank" href="http://www.speedtest.cn/">
                 <li class="sidenav-btn">SpeedTest
@@ -155,8 +170,8 @@
                 <li class="sidenav-btn" id="bg">干掉/显示壁纸</li>
             </a>
         </ul>
-        <p style="width:100%;text-align:center;margin:0 auto;font-size:14px;color:lightgray;">2020-2022 © <a style="color: lightgray;" href="http://www.coolapk.com/u/691518">小K同學</a><br>ALL RIGHTS RESERVED.</p>
-    </nav> -->
+        <p style="width:100%;text-align:center;margin:0 auto;font-size:14px;color:lightgray;">2020-2022 © <a style="color: lightgray;" href="http://www.coolapk.com/u/691518">小K同學</a><br>ALL RIGHTS RESERVED.</p> -->
+    </nav>
 
     <!-- 主页面 -->
     <main id="main" class="panel">
@@ -166,8 +181,8 @@
         <div class="container">
 
             <!-- 侧边栏按钮 -->
-            <!-- <img class="slidebtn btn-hamburger js-slideout-toggle" src="img/menu.svg" /> -->
-            
+            <img class="slidebtn btn-hamburger js-slideout-toggle" src="img/menu.svg" />
+
             <!-- 搜索盒子 -->
             <div class="search-box">
                 <!-- logo -->
@@ -180,7 +195,8 @@
                 <!-- 搜索框 -->
                 <div class="inputDiv">
                     <form id="form" action="https://cn.bing.com/search" target="_self" onsubmit="return check()">
-                        <input onmouseover="this.focus()" onfocus="this.select()" id="inputText" type="text" placeholder="Bing搜索..." name="q" size="30" />
+                        <input onmouseover="this.focus()" onfocus="this.select()" id="inputText" type="text"
+                            placeholder="Bing搜索..." name="q" size="30" />
                         <button id="submitButton" class="submitButton" type="submit"></button>
                     </form>
                     <!-- 搜索提示词 -->
@@ -216,16 +232,16 @@
             'tolerance': 70
         });
         document.querySelector('.js-slideout-toggle').addEventListener('click',
-            function() {
+            function () {
                 slideout.toggle();
             });
         document.querySelector('.menu').addEventListener('click',
-            function(eve) {
+            function (eve) {
                 if (eve.target.nodeName === 'A') {
                     slideout.close();
                 }
             });
-        $(document).click(function(e) {
+        $(document).click(function (e) {
             var Class = $(e.target).attr("class");
             var Id = $(e.target).attr("id");
             if (Class == 'panel slideout-panel slideout-panel-left' || Class == 'folder-item col-xs-3 col-sm-2' || Class == 'search-box' || Id == 'inputText' || Id == 'logo') {

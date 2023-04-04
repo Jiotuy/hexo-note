@@ -80,7 +80,20 @@ $(function() {
                 link: 'https://www.zhihu.com/',
                 box_shadow: '#0078D8',
                 icon: 'img/zhihulogo.png',
-            }]
+            },
+            {
+                name: 'alist',
+                link: 'https://zfile.noel.ga/',
+                box_shadow: '#0078D8',
+                icon: 'img/bootstrap_icon/alist-logo.svg',
+            },
+            {
+                name: 'trilium',
+                link: 'https://t.noel.ga/',
+                box_shadow: '#0078D8',
+                icon: 'img/bootstrap_icon/trilium-logo.svg',
+            }
+        ]
         }
         for (var i = 0; i < bookmark.data.length; i++) {
             if (bookmark.data[i].name == 'Via插件') {

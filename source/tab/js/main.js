@@ -89,7 +89,7 @@ $(function() {
             },
             {
                 name: 'trilium',
-                link: 'https://t.noel.ga/',
+                link: 'http://t.noel.ga/',
                 box_shadow: '#0078D8',
                 icon: 'img/bootstrap_icon/trilium-logo.svg',
             }

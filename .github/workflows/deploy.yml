@@ -21,8 +21,8 @@ jobs:
         QINIU_USER_NAME: ${{ secrets.QINIU_USER_NAME }}
       run: |
         npm install hexo-cli -g
+        cd master
         npm install
-        ls
         hexo g
         cd qiniu_upload && sh qiniu-sysc.sh
         

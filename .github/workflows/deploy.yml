@@ -13,14 +13,6 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 14.x
-    - uses: Hanlin-Dong/hexo-to-qiniu-action@v1
-      with:
-        bucket: hexo-01
-        access-key: ${{ secrets.QINIU_ACCESS_KEY }}
-        secret-key: ${{ secrets.QINIU_SECRET_KEY }}
-        base-folder: ""
-        domain: "https://note.noel.ga"
-        sub-domain: ""
     - name: upload qiniu
       env:
         QINIU_ACCESS_KEY: ${{ secrets.QINIU_ACCESS_KEY }}
@@ -30,7 +22,7 @@ jobs:
       run: |
         npm install hexo-cli -g
         npm install
-        hexo clean
+        ls
         hexo g
         cd qiniu_upload && sh qiniu-sysc.sh
         

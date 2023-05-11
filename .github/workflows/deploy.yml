@@ -18,6 +18,6 @@ jobs:
         bucket: hexo-01
         access-key: ${{ secrets.QINIU_ACCESS_KEY }}
         secret-key: ${{ secrets.QINIU_SECRET_KEY }}
-        base-folder: ""
+        base-folder: hexo-note
         domain: "https://note.noel.ga"
         sub-domain: ""

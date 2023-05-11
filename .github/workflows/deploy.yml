@@ -21,3 +21,16 @@ jobs:
         base-folder: ""
         domain: "https://note.noel.ga"
         sub-domain: ""
+    - name: upload qiniu
+      env:
+        QINIU_ACCESS_KEY: ${{ secrets.QINIU_ACCESS_KEY }}
+        QINIU_SECRET_KEY: ${{ secrets.QINIU_SECRET_KEY }}
+        QINIU_BUCKET: ${{ secrets.QINIU_BUCKET }}
+        QINIU_USER_NAME: ${{ secrets.QINIU_USER_NAME }}
+      run: |
+        npm install hexo-cli -g
+        npm install
+        hexo clean
+        hexo g
+        cd qiniu_upload && sh qiniu-sysc.sh
+        
